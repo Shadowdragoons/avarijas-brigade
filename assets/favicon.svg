@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f04b52"/><stop offset="1" stop-color="#7e1426"/></linearGradient></defs><path fill="url(#g)" d="M32 2 59 15v25L32 62 5 40V15z"/><text x="32" y="40" fill="white" font-family="Arial" font-size="23" font-weight="900" text-anchor="middle">AB</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff3b52"/>
+      <stop offset="1" stop-color="#6e0a1e"/>
+    </linearGradient>
+  </defs>
+  <polygon points="32,2 58,13 55,45 32,62 9,45 6,13" fill="url(#g)"/>
+  <polygon points="32,7 53,16 50,43 32,56 14,43 11,16" fill="#0a0807"/>
+  <text x="32" y="42" font-family="Impact, sans-serif" font-size="24" fill="#ff3b52" text-anchor="middle">AB</text>
+</svg>
