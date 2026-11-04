@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://shadowdragoons.github.io/avarijas-brigade/sitemap.xml
+Sitemap: https://avarijas-brigade.github.io/sitemap.xml
