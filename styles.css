@@ -145,6 +145,12 @@ h2 em{font-style:normal;color:var(--red-hot)}
 .feature-card p{font-size:13.5px;line-height:1.8;color:#9d9891;margin:0}
 .feature-card:after{content:"";position:absolute;right:-30px;top:-30px;width:110px;height:110px;border:1px solid rgba(220,20,60,.14);transform:rotate(45deg);pointer-events:none}
 
+/* ---- english SEO note ---- */
+.en-note{margin-top:64px;padding-top:26px;border-top:1px solid var(--line);max-width:720px}
+.en-note-tag{font-size:9px;letter-spacing:2.5px;font-weight:800;color:var(--faint)}
+.en-note p{margin:10px 0 0;font-size:13px;line-height:1.8;color:#7d7872}
+.en-note strong{color:#b8b2ab;font-weight:700}
+
 /* ---- raid section ---- */
 .raid-section{position:relative;background:#0e0b0a;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .raid-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 90% 15%,rgba(220,20,60,.15),transparent 46%),radial-gradient(ellipse at 5% 95%,rgba(255,122,60,.05),transparent 50%)}

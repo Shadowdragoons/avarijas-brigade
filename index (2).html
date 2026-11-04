@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070505">
+  <title>Avārijas Brigāde | Latviešu WoW Forever Horde Ģilde</title>
+  <meta name="description" content="Avārijas Brigāde ir latviešu World of Warcraft Forever ģilde EU Mega Server, Horde frakcijā. Pievienojies mūsu latviešu WoW kopienai!">
+  <meta name="keywords" content="Avārijas Brigāde, Latvian WoW Guild, Latvian WoW players, WoW Forever EU, WoW Forever Horde, Latvijas WoW ģilde, latviešu WoW spēlētāji">
+  <meta property="og:title" content="Avārijas Brigāde — Latviešu WoW Forever Ģilde">
+  <meta property="og:description" content="Latviešu Horde ģilde World of Warcraft Forever EU Mega Server. Jauni spēlētāji laipni gaidīti!">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dela+Gothic+One&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=4">
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Avārijas Brigāde",
+    "description":"Latvian-speaking Horde guild in World of Warcraft Forever EU Mega Server.",
+    "url":"https://shadowdragoons.github.io/avarijas-brigade/",
+    "sameAs":["https://discord.gg/bbRNztj4Y"]
+  }
+  </script>
+</head>
+<body>
+  <canvas id="embers" aria-hidden="true"></canvas>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Avārijas Brigāde">
+      <span class="brand-mark">AB</span><span class="brand-name">AVĀRIJAS <b>BRIGĀDE</b></span>
+    </a>
+    <nav class="nav" aria-label="Galvenā navigācija">
+      <a href="#about" data-i18n="navAbout">Par mums</a>
+      <a href="#raids" data-i18n="navRaids">Reidi</a>
+      <a href="#join" data-i18n="navJoin">Pievienoties</a>
+    </nav>
+    <div class="top-actions">
+      <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language">EN</button>
+      <a class="discord-small" href="https://discord.gg/bbRNztj4Y" target="_blank" rel="noopener">Discord <span>↗</span></a>
+      <button class="menu-btn" id="menuBtn" type="button" aria-label="Atvērt izvēlni" aria-expanded="false" aria-controls="menuOverlay">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay" role="dialog" aria-modal="true" aria-label="Izvēlne" hidden>
+    <button class="menu-close" id="menuClose" type="button" aria-label="Aizvērt izvēlni">✕</button>
+    <nav class="menu-links">
+      <a href="#about" data-i18n="navAbout">Par mums</a>
+      <a href="#raids" data-i18n="navRaids">Reidi</a>
+      <a href="#join" data-i18n="navJoin">Pievienoties</a>
+      <a href="https://discord.gg/bbRNztj4Y" target="_blank" rel="noopener" class="menu-discord">Discord ↗</a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="eyebrow reveal"><span class="pulse"></span><span data-i18n="eyebrow">LATVIEŠU HORDE ĢILDE · WOW FOREVER</span></div>
+        <h1 class="reveal">
+          <span class="h-line">AVĀRIJAS</span>
+          <span class="h-line h-punch">BRIGĀDE<i>.</i></span>
+        </h1>
+        <p class="hero-sub reveal" data-i18n="heroSub">Latviešu spēlētāji. Kopīga cīņa. Viena brigāde.</p>
+        <p class="hero-copy reveal" data-i18n="heroCopy">Mēs esam latviešu World of Warcraft ģilde ar Classic WoW saknēm. Spēlējam Horde pusē WoW Forever EU Mega Server un aicinām pievienoties jaunus biedrus.</p>
+        <div class="hero-buttons reveal">
+          <a class="btn btn-primary" href="https://discord.gg/bbRNztj4Y" target="_blank" rel="noopener"><span data-i18n="joinDiscord">PIEVIENOJIES DISCORD</span><b>↗</b></a>
+          <a class="btn btn-ghost" href="#about" data-i18n="discover">IEPAZĪSTI ĢILDI</a>
+        </div>
+        <div class="hero-meta reveal">
+          <div><span class="meta-label" data-i18n="region">REĢIONS</span><strong>EU · MEGA SERVER</strong></div>
+          <div><span class="meta-label" data-i18n="faction">FRAKCIJA</span><strong class="red-text">HORDE</strong></div>
+          <div><span class="meta-label" data-i18n="language">VALODA</span><strong data-i18n="latvian">LATVIEŠU</strong></div>
+        </div>
+      </div>
+      <div class="hero-art" id="heroArt" aria-hidden="true">
+        <div class="rune rune-a"></div><div class="rune rune-b"></div>
+        <div class="crest"><div class="crest-inner"><span>AB</span><img class="crest-emblem" src="assets/horde-emblem.png" alt="Horde emblēma" width="480" height="589"><small data-i18n="estClassic">EST. CLASSIC</small></div></div>
+        <div class="art-caption"><span>01 /</span> <span data-i18n="artCaption">VIENA BRIGĀDE. VIENS MĒRĶIS.</span></div>
+      </div>
+      <div class="hero-bottom"><span>WORLD OF WARCRAFT FOREVER</span><span>LATVIA <i>◆</i> EU</span></div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track" id="marqueeTrack">
+        <span>LOK'TAR OGAR</span><i>◆</i><span data-i18n="mq1">LATVIEŠU HORDE ĢILDE</span><i>◆</i><span>WOW FOREVER</span><i>◆</i><span data-i18n="mq2">REIDI · PVE · PVP · KOPIENA</span><i>◆</i><span>EST. CLASSIC</span><i>◆</i>
+      </div>
+    </div>
+
+    <section class="stats">
+      <div class="stat reveal"><strong>CLASSIC</strong><span data-i18n="stat1">WoW saknes</span></div>
+      <div class="stat reveal"><strong>HORDE</strong><span data-i18n="stat2">EU Mega Server</span></div>
+      <div class="stat reveal"><strong>LV + EN</strong><span data-i18n="stat3">Kopienas valodas</span></div>
+      <div class="stat reveal"><strong>RECRUITING</strong><span data-i18n="stat4">Uzņemam jaunus biedrus</span></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-kicker reveal"><span>01</span><i></i><span data-i18n="aboutKicker">KAS MĒS ESAM</span></div>
+      <div class="section-heading">
+        <h2 class="reveal" data-i18n="aboutTitle">VAIRĀK NEKĀ <em>ĢILDE.</em></h2>
+        <div class="section-intro reveal" data-i18n="aboutIntro">Avārijas Brigāde ir latviešu WoW kopiena, kas veidojusies kopš World of Warcraft Classic pirmsākumiem. Mūs vieno vēlme spēlēt kopā, palīdzēt cits citam un izbaudīt Azeroth kompānijā.</div>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card feature-wide reveal">
+          <span class="card-number">01 / COMMUNITY</span>
+          <h3 data-i18n="feature1Title">Latviešu kopiena</h3>
+          <p data-i18n="feature1Text">Sazināmies latviski, iepazīstam citus spēlētājus un veidojam draudzīgu vidi gan veterāniem, gan jaunpienācējiem.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="card-number">02 / RAIDING</span>
+          <h3 data-i18n="feature2Title">Reidi, PvE un PvP</h3>
+          <p data-i18n="feature2Text">Kopīgi reidi, PvE aktivitātes un PvP cīņas ir svarīga mūsu ģildes dzīves daļa.</p>
+        </article>
+        <article class="feature-card reveal">
+          <span class="card-number">03 / EXPERIENCE</span>
+          <h3 data-i18n="feature3Title">Classic pieredze</h3>
+          <p data-i18n="feature3Text">Ģildei ir vairāku gadu Classic WoW spēlēšanas un reidošanas pieredze.</p>
+        </article>
+      </div>
+      <div class="en-note reveal">
+        <span class="en-note-tag">FOR ENGLISH SPEAKERS</span>
+        <p>Looking for a <strong>Latvian WoW guild</strong>? Avārijas Brigāde unites Latvian World of Warcraft players — we raid, run PvE and PvP together as Horde on the WoW Forever EU Mega Server. Latvian players in Latvia and abroad are always welcome — join our Discord and play with us!</p>
+      </div>
+    </section>
+
+    <section class="raid-section" id="raids">
+      <div class="raid-bg" aria-hidden="true"></div>
+      <div class="section raid-inner">
+        <div class="section-kicker reveal"><span>02</span><i></i><span data-i18n="raidKicker">KOPĪGĀ SPĒLE</span></div>
+        <div class="raid-layout">
+          <div>
+            <h2 class="reveal" data-i18n="raidTitle">SAVĀCAMIES. <em>CĪNĀMIES.</em></h2>
+            <p class="raid-description reveal" data-i18n="raidText">Mūsu reidu dienas pašlaik ir trešdiena, ceturtdiena un svētdiena. Precīzi sākuma laiki tiek saskaņoti ar ģildi — pievienojies Discord, lai uzzinātu jaunāko informāciju.</p>
+          </div>
+          <div class="schedule reveal">
+            <div class="schedule-head"><span data-i18n="scheduleTitle">PLĀNOTĀS REIDU DIENAS</span><span class="live-dot"></span></div>
+            <div class="day"><span>01</span><strong data-i18n="wednesday">Trešdiena</strong><small data-i18n="timeTbc">LAIKS TIEK PRECIZĒTS</small></div>
+            <div class="day"><span>02</span><strong data-i18n="thursday">Ceturtdiena</strong><small data-i18n="timeTbc">LAIKS TIEK PRECIZĒTS</small></div>
+            <div class="day"><span>03</span><strong data-i18n="sunday">Svētdiena</strong><small data-i18n="timeTbc">LAIKS TIEK PRECIZĒTS</small></div>
+            <div class="loot-note"><b>SOFT RES</b><span data-i18n="lootText">Laupījuma sadalei izmantojam Soft Reserve sistēmu.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section join-section" id="join">
+      <div class="section-kicker reveal"><span>03</span><i></i><span data-i18n="joinKicker">TAVA VIETA IR ŠEIT</span></div>
+      <div class="join-card reveal">
+        <div class="join-copy">
+          <span class="join-tag"><span class="pulse"></span><span data-i18n="recruiting">JAUNI BIEDRI LAIPNI GAIDĪTI</span></span>
+          <h2 data-i18n="joinTitle">PIEVIENOJIES <em>BRIGĀDEI.</em></h2>
+          <p data-i18n="joinText">Vai esi WoW veterāns vai tikai sāc savu piedzīvojumu — ja vēlies spēlēt kopā ar latviešiem, dod mums ziņu!</p>
+          <a class="btn btn-primary" href="https://discord.gg/bbRNztj4Y" target="_blank" rel="noopener"><span data-i18n="joinNow">PIEVIENOTIES DISCORD</span><b>↗</b></a>
+        </div>
+        <div class="join-side">
+          <div class="join-emblem">AB</div>
+          <div><span data-i18n="guildNameLabel">ĢILDE</span><strong>AVĀRIJAS BRIGĀDE</strong></div>
+          <div><span data-i18n="factionLabel">FRAKCIJA</span><strong class="red-text">HORDE</strong></div>
+          <div><span data-i18n="serverLabel">SERVERIS</span><strong>EU MEGA SERVER</strong></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#home"><span class="brand-mark">AB</span><span class="brand-name">AVĀRIJAS <b>BRIGĀDE</b></span></a>
+    <p data-i18n="footerText">Latviešu World of Warcraft kopiena · Horde · EU Mega Server</p>
+    <a href="https://discord.gg/bbRNztj4Y" target="_blank" rel="noopener">DISCORD ↗</a>
+    <small>© <span id="year"></span> AVĀRIJAS BRIGĀDE. <span data-i18n="fanNote">Neoficiāla spēlētāju ģildes lapa. World of Warcraft ir Blizzard Entertainment preču zīme.</span></small>
+  </footer>
+
+  <script src="script.js?v=4"></script>
+</body>
+</html>
